@@ -1,5 +1,7 @@
 const searchBtn = document.getElementById("searchBtn");
 const searchInput = document.getElementById("searchInput");
+const cards = document.getElementById('cards');
+
 
 searchBtn.addEventListener("click", (event) => {
   getPlants(searchInput.value);
@@ -28,4 +30,16 @@ async function getPlants(query) {
   } catch (error) {
     console.error(error);
   }
+}
+
+function displayData(data) {
+    console.log(data.hits[0]);
+    //See everything in a loop with each tags and items
+    for (let i = 0; i < data.hits.length; i++) {
+        console.log(data.hits[i].tags);
+        //? createElement
+        var div = document.createElement('div');
+        div.innerHTML = data.hits[i].tags;
+        cards.appendChild(div);
+    }
 }
