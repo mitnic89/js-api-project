@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="script.js" defer></script>
+    <title>Plant Repository</title>
+  </head>
+  <body>
+    <main>
+      <!-- As a heading -->
+      <nav class="navbar navbar-light bg-light" id="nav">        
+        <h2 class="navbar-brand mb-0 h1" id="websiteTitle">Brittanica Plant Repository</h2>
+<img class="logo" src="./img/63-632602_sunflower-logo-hd-png-download.png">
+      </nav>
+      <!-- Search -->
+      <div class="container">
+        <label for="searchInput" class="form-label"
+          >Enter plant name here:
+        </label>
+        <input
+          id="searchInput"
+          type="text"
+          class="form-control"
+          placeholder="Sunflower"
+          aria-label="Search"
+          aria-describedby="basic-addon1"
+          value=""
+          name="searchInput"
+        />
+
+        <button type="button" class="btn btn-primary bold w-100" id="searchBtn">
+          Search
+        </button>
+        <!-- /Search -->
+        <div id="cards" class="row"></div>
+      </div>
+    </main>
+    <!-- pagination -->
+  </body>
+</html>

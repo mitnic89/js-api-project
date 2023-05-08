@@ -1,0 +1,37 @@
+h3 {
+    display: block;
+  }
+
+  
+  #nav{
+    font-family: castoro;
+
+  }
+
+#websiteTitle{
+/* move to the right of the page */
+    position: absolute;
+    left: 15%;
+}
+
+
+  .logo{
+    height: 100px;
+  }
+  
+  .form-label {
+    font-size: 3.25rem;
+    font-family: 'Papyrus', cursive;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+.form-control{
+    font-family: 'Papyrus', cursive;
+
+}
+
+#searchBtn {
+    font-family: 'Times New Roman', Times, serif
+}
+
